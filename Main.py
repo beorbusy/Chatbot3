@@ -1,5 +1,6 @@
 from flask import Flask
 import os
+from app import app as calculator_app
 
 app = Flask(__name__)
 
