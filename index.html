@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Subtraction Calculator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Subtraction Calculator</h1>
+        <form method="POST">
+            <label for="num1">Enter First Number (Minuend):</label>
+            <input type="text" id="num1" name="num1" required><br>
+
+            <label for="num2">Enter Second Number (Subtrahend):</label>
+            <input type="text" id="num2" name="num2" required><br>
+
+            <button type="submit">Answer</button>
+        </form>
+
+        {% if result is not none %}
+            <h2>Result: {{ result }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
