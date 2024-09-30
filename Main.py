@@ -10,6 +10,7 @@ port = int(os.getenv('PORT', 4000))
 @app.route('/')
 def hello():
     return 'Hello World!'
+    return calculator_app.index()
 
 if __name__ == '__main__':
     # Bind to 0.0.0.0 to allow external connections
