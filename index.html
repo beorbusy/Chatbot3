@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Hello from Flask</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1>{{ message }}</h1>  <!-- This will display the message from get_message() -->
 </body>
 </html>
