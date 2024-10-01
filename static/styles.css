@@ -1,0 +1,31 @@
+/* static/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #007BFF; /* Bootstrap primary color */
+    margin-bottom: 20px;
+}
+
+h1:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+button {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
