@@ -12,4 +12,4 @@ def hello():
     return render_template('index.html', message=message)  # Render index.html and pass the message
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port, debug=True)  # Enable debug mode for better error messages
